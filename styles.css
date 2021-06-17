@@ -62,24 +62,22 @@ li div{
 }
 
 form input{
-    float: left;
-    width: 38%;
+    float: left !important;
     margin: 0;
-    border: 0;
-    border-bottom: 1px solid #eee;
-    margin: 0 1%;
+    border: 1px solid grey;
+    margin: 1% 1%;
     padding: 10px;
     display: block;
     box-sizing: border-box;
     font-size: 18px;
 }
 
-form input:focus{
+/* form input:focus{
     outline: none;
     border-bottom: 3px solid #88236f;
     padding-bottom: 8px;
     transition: all ease 0.2s;
-}
+} */
 
 form:after{
     content: '';
