@@ -1,5 +1,5 @@
 body{
-    background: #eab0dc;
+    background: rgb(104, 206, 150);
     font-family: ubuntu;
 }
 
@@ -16,7 +16,6 @@ h1{
     max-width: 960px;
     margin: 30px auto;
     padding:  20px 30px;
-    border-radius: 10px 120px 10px 10px;
     box-shadow: 1px 3px 5px rgba(0,0,0,0.1)
 }
 
@@ -32,7 +31,7 @@ li{
     color: #555;
     position: relative;
     border-bottom: 1px solid #e6e6e6;
-    height: 46px;
+    height: 20px;
 }
 
 li:nth-child(even){

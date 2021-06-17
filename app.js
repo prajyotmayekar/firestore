@@ -1,7 +1,11 @@
-const cafeList = document.querySelector('#cafe-list')
+const cafeList = document.querySelector('#cafe-list');
 
 function render_element(doc){
-    console.log(doc.data().name+" => "+doc.data().city);
+
+    var liTag = document.createElement("li");
+    liTag.innerHTML = "<b>Hotel Name:</b> "+doc.data().name+" <b>Place:</b> "+doc.data().city;
+    cafeList.appendChild(liTag);
+    //console.log(doc.data().name+" => "+doc.data().city);
 }
 
 db.collection('cafes').get().then((snapshot)=>{
