@@ -11,7 +11,7 @@ function render_element(doc){
     //console.log(doc.data().name+" => "+doc.data().city);
 }
 
-db.collection('cafes').get().then((snapshot)=>{
+db.collection('cafes').orderBy('name').get().then((snapshot)=>{
     console.log('--db loaded--');
     console.log(snapshot.docs);
     snapshot.docs.forEach(doc=>{
@@ -31,3 +31,7 @@ function submit_form(){
         hotel_name.value  ,hotel_city.value = '';
     }
 }
+
+db.collection('cafes').doc('AwBGbRUR3cGA0JtzkC5p').update({
+    name: 'test cafe'
+})
